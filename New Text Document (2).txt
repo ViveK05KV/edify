@@ -1,0 +1,60 @@
+<html>
+<head>
+    <style type="text/css">
+
+
+        .Container
+        {
+        background-color:yellow;
+        height:100%;
+        weight:100%;
+        }
+
+        .inner
+        {
+        float:left;
+        top:10%;
+        height:90%;
+        width:100%
+        }
+
+        .Content
+        {
+        float:left;
+        top:10%;
+        left:20%;
+        width:80%;
+        height:100%;
+        background-color:skyblue;
+        }
+
+        .Header
+        {
+        float:left;
+        height:10%;
+        width:100%;
+        background-color:Blue;
+        text-align:center;
+        }
+
+        .NavPanel
+        {
+            float:left;
+            top:10%;
+            height:100%;
+            width:20%;
+            background-color:Menu;
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="Header"></div>
+            <div class="inner">
+                <div class="NavPanel"></div>
+                <div class="Content"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
