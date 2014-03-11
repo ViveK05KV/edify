@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+	<title>EDIFY</title>
+	<img src="Img/logo.png" width="220" height="169" alt="" title="" align="left" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script>
+function validate()
+{
+ var x=document.login.username.value;
+ var y=document.login.password.value;
+ if(x=="")
+ {
+  alert("username is empty");
+  }
+ else if(y=="")
+ {
+  alert("password is empty")
+  }
+}
+</script>
+</HEAD>
+<body>
+<div class="wrap">
+  <form name="login" action="pages/logaction.jsp">
+  <div align="right">
+    <table>
+    <tr>
+    <td>USERNAME</td><td>
+    <input type="text" name="user"></td><td>PASSWORD</td><td><input type="password" name="pass"></td><td><input type="submit" value="login">
+    </td></tr>
+    <tr><td>
+    <a href="pages/registration.html" title="Registration">Registration</a>
+    </td></tr>
+    </table>
+  </div>
+  </form>
+</div>
+</body>
+</HTML>

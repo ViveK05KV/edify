@@ -1,0 +1,50 @@
+<html>
+<head>
+<script>
+function validate()
+{
+ var x=document.login.username.value;
+ var y=document.login.password.value;
+ var z=document.login.confpass.value;
+ if(x=="")
+ {
+  alert("username is empty");
+  }
+ else if(y=="")
+ {
+  alert("password is empty");
+  }
+ else if(y!=z)
+ {
+  alert("password mismatch");
+ }
+}
+</script>
+<body>
+<form name="login" action="loginaction">
+<div align="left">
+<table>
+<tr><td>username</td>
+<td><input type="text" name="username"></td></tr>
+<tr><td>password</td>
+<td><input type="password" name="password"></td></tr>
+<tr><td>confrimpassword</td><td>
+<input type="password" name="confpass">
+</td></tr>
+<tr><td>name</td>
+<td><input type="text" name="name"></td></tr>
+<tr><td>gender</td>
+<td>male <input type="radio" name="gender" value="male"> female<input type="radio" name="gender" value="female"></td></tr>
+<table><tr><td>Role</td><td>  </td>
+<td><input type="radio" name="teacher"></td><td>Teacher</td>
+<td><input type="radio" name="staff"></td><td>Staff</td>
+<td><input type="radio" name="student"></td><td>Student</td></tr></table>
+<tr><td>
+<input type="button" value="Register" onclick=validate()>
+</td></tr>
+</table>
+</div>
+</form>
+</body>
+</head>
+</html>
